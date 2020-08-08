@@ -40,14 +40,14 @@ public class MockInterviewPractice4{
 
         if(firstArrPointer < first.length){
             for(int i = firstArrPointer; i < first.length; i++){
-                mergedArr[mergedArrPointer] = first[firstArrPointer];
+                mergedArr[mergedArrPointer] = first[i];
                 mergedArrPointer++;
             }
         }
 
         if(secondArrPointer < second.length){
             for(int i = secondArrPointer; i < second.length; i++){
-                mergedArr[mergedArrPointer] = second[secondArrPointer];
+                mergedArr[mergedArrPointer] = second[i];
                 mergedArrPointer++;
             }
         }
