@@ -9,7 +9,7 @@
 * Knowing that the integer 2 is the first prime number, all multiples of it from 0 to the given boundary are can-
 * celled out. Any integer not cancelled out is a prime and hence stored in a queue. The process is repeated for
 * all non-cancelled integers.
-* Time complexity: O(n)
+* Time complexity: O(nlogn)
 * Space complexity: O(n)
 *
 * @param boundary - long long
