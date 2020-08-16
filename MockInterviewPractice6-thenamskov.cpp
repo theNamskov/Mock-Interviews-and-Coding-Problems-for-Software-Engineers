@@ -21,10 +21,9 @@ std::queue<long long> get_prime_numbers(long long boundary) {
 }
 
 int main(int argc, char *argv[]) {
-
     long long boundary = 8369999;   // Last allowance for my device's C++ implementation
     std::queue<long long> prime_numbers = get_prime_numbers(boundary),
-                tmp_queue = prime_numbers;
+                          tmp_queue = prime_numbers;
     std::cout << "[  ";
     while(!tmp_queue.empty()) {
         std::cout << tmp_queue.front() << "  ";
