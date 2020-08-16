@@ -1,5 +1,4 @@
 #include <iostream>
-#include <chrono>
 #include  <queue>
 
 std::queue<long long> get_prime_numbers(long long boundary) {
@@ -7,7 +6,6 @@ std::queue<long long> get_prime_numbers(long long boundary) {
     int counter = 0;
     boundary+=1;
     bool ar[boundary];
-    auto t1 = std::chrono::high_resolution_clock::now();
     for(long long i=2; i<boundary; ++i) ar[i] = true;
     for(long long i=2; i<boundary; ++i) if(ar[i]) {
         long long j=i*2;
@@ -18,9 +16,6 @@ std::queue<long long> get_prime_numbers(long long boundary) {
         counter++;
         prime_numbers.push(i);
     }
-    auto t2 = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
-    std::cout << "Execution time for calculating prime numbers: " << duration << "ms\n\n";
 
     return prime_numbers;
 }
